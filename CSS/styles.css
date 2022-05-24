@@ -1,170 +1,84 @@
 /* reseteo inicial */
 * {
   margin: 0px;
-  padding: 0px;
-}
+  padding: 0px; }
+
 /* definiendo estructura inicial desde el body con direccion de columna */
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(227, 235, 213);
-  border-radius: 10px;
-}
+  background-color: #e3ebd5;
+  border-radius: 10px; }
 
-/* definiendo comportamiento de los items en el header a row*/
-header {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-/* ajustando el logo */
+/* aplicando neesting al header*/
 .header__logo {
   margin-right: 10px;
   margin-left: 10px;
-  height: 75px;
-  width: 180px;
-  margin: 8px;
-}
-/* definiendo comportamiento de los items en el titulo a columna*/
+  height: 95px;
+  width: 200px;
+  margin: 8px; }
+
 .header__titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: blue;
-}
-/* definiendo comportamiento de los items en el menu para que funcione responsive*/
-.header__navigation {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  align-items: center;
-}
-/* definiendo comportamiento de los items en la lista para acomodar el menu en fila y justificando al final*/
-ul.header__navigation li {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 10px;
-  font-size: 20px;
-}
+  color: blue; }
 
-ul.header__navigation li:hover {
+/* definiendo comportamiento de listas de index.html y events.html*/
+.header__transiciones :hover, li:hover {
   color: blue;
   transition: all, 1s;
-  transform: scale(1.1);
-  background-color: rgb(184, 209, 201);
-}
+  transform: scale(1.01); }
+
 /* depurando el menu sin la linea */
 a {
-  text-decoration: none;
-}
-/* definiendo estructura de la seccion main del index */
+  text-decoration: none; }
+
+/* aplicando neesting  a section main */
 .main__information {
   margin: 1px;
-  font-size: 15px;
-}
-/*eliminar puntos en las listas pagina : index */
-.main__information ul li {
-  list-style: none;
-}
-/* definiendo comportamiento de los items en la seccion principal (main)*/
-.main__form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 5px;
-}
-/* definiendo estructura global para el fieldset*/
-fieldset {
-  height: 250px;
-  width: 700px;
-  margin: 5px;
-  background-color: #afebaf;
-}
+  font-size: 18px; }
+  .main__information ul li {
+    list-style: none; }
+
 /* adaptando las imagenes para el aprovechamiento general adecuado*/
 .img {
   max-width: 100%;
-  max-height: 100%;
-}
-/* redefiniendo el tamano de las imagenes de los players*/
-ul.main__players li img.main_image {
-  width: 175px;
-  height: 220px;
-}
-/* definiendo la estructura de la secion main para mostrar imagenes de los players y hacerlo reponsive*/
+  max-height: 100%; }
+
+/* aplicando nesting a clases de players*/
 ul.main__players {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-}
-/* terminando de ajustar */
-ul.main__players li {
-  list-style: none;
-  font-size: 20px;
-}
+  /* neesting */ }
+  ul.main__players li {
+    list-style: none;
+    font-size: 20px;
+    /* neesting */ }
+    ul.main__players li img.main_image {
+      padding-bottom: 1rem;
+      width: 175px;
+      height: 220px; }
 
 .footer__copyright {
   height: 300px;
-  width: 300px;
-}
-
-.marging-0 {
-  margin: 0;
-}
-.padding-0 {
-  padding-right: 0;
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.rectangulo {
-  border-top: solid 1px #000;
-  border-bottom: solid #000 1px;
-  border-right: solid 1px #000;
-}
-.rectangulotop {
-  border-top: solid 1px #000;
-}
-.draws {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: center;
-}
-.prueba {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: right;
-  align-items: center;
-  width: 400px;
-  /*width: 25%;*/
-  margin: 0px;
-}
+  width: 300px; }
 
 /* TABLET */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en tablet*/
 @media (min-width: 576px) and (max-width: 768px) {
   body {
-    background-color: lightblue;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
+    background-color: lightblue; }
+  .main__information {
+    font-size: 12px; }
+  /* aplicando neesting al header*/
   .header__logo {
     margin: 5px;
     padding: 5px;
-    height: 50px;
-    width: 140px;
-  }
-
+    height: 80px;
+    width: 170px; }
   .header__titulo {
     display: flex;
     flex-direction: column;
@@ -172,125 +86,34 @@ ul.main__players li {
     flex-wrap: wrap;
     color: blue;
     font-size: 10px;
-    margin: 3px;
-  }
-
-  .header__navigation {
-    margin: 1px;
-  }
-  .main__information {
-    font-size: 12px;
-  }
-  ul.header__navigation li {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 1px;
-    font-size: 15px;
-  }
-  fieldset {
-    width: 500px;
-    height: 220px;
-  }
-}
-
-.rectangulo {
-  margin: auto 20px;
-  border-top: solid 1px #000;
-  border-bottom: solid #000 1px;
-  border-right: solid 1px #000;
-  width: 60%;
-  margin: 15px;
-}
-.h-line {
-  margin: auto 20px;
-  border-top: solid 1px #000;
-}
-.draws {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+    margin: 3px; } }
 
 /* CELULAR */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en mobiles*/
 @media (min-width: 320px) and (max-width: 575px) {
   body {
-    background-color: rgb(230, 223, 173);
-  }
+    background-color: #e6dfad; }
+  .main__information {
+    font-size: 12px; }
+  /* aplicando neesting al header*/
   .header__logo {
     display: flex;
+    align-items: flex-end;
     margin: 5px;
     padding: 5px;
-    height: 50px;
-    width: 140px;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
+    height: 80px;
+    width: 170px; }
   .header__titulo {
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: center;
     flex-wrap: wrap;
     align-content: stretch;
     color: blue;
     font-size: 10px;
-    margin: 3px;
-  }
-
-  .main__information {
-    font-size: 12px;
-  }
-  .header__navigation {
-    margin: 1px;
-  }
-  ul.header__navigation li {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 1px;
-    font-size: 17px;
-  }
+    margin: 3px; }
   ul.main__players {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 15px;
-  }
-  fieldset {
-    width: 400px;
-    height: 220px;
-  }
-
-  .rectangulo {
-    margin: auto 20px;
-    border-top: solid 1px #000;
-    border-bottom: solid #000 1px;
-    border-right: solid 1px #000;
-    width: 60%;
-    margin: 15px;
-  }
-  .h-line {
-    margin: auto 20px;
-    border-top: solid 1px #000;
-  }
-  .draws {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-"build-css": "node-sass --include-path scss scss/style.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    padding: 15px; } }

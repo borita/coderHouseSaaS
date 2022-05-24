@@ -1,0 +1,152 @@
+@import 'variables';
+
+/* reseteo inicial */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* definiendo estructura inicial desde el body con direccion de columna */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(227, 235, 213);
+  border-radius: 10px;
+}
+/* aplicando neesting al header*/
+.header {
+  &__logo {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 95px;
+    width: 200px;
+    margin: 8px;
+  }
+  &__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:$color-titulo;
+  }
+}
+/* definiendo comportamiento de listas de index.html y events.html*/
+
+.header__transiciones :hover, li:hover {
+  color: $color-transiciones;
+  transition: all, 1s;
+  transform: scale(1.01);
+}
+
+/* depurando el menu sin la linea */
+a {
+  text-decoration: none;
+}
+/* aplicando neesting  a section main */
+.main__information {
+  margin: 1px;
+  font-size: 18px;
+  ul li {
+    list-style: none;
+  }
+}
+
+/* adaptando las imagenes para el aprovechamiento general adecuado*/
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* aplicando nesting a clases de players*/
+ul.main__players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  /* neesting */
+  li {
+    list-style: none;
+    font-size: 20px;
+    /* neesting */
+    img.main_image {
+      padding-bottom:  1rem;
+      width: 175px;
+      height: 220px;
+    }
+  }
+}
+
+.footer__copyright {
+  height: 300px;
+  width: 300px;
+}
+
+/* TABLET */
+/* se redefiniran las secciones para que se adapten a diseno responsivo en tablet*/
+@media (min-width: 576px) and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+    }
+    .main__information {
+      font-size: 12px;
+    }
+    /* aplicando neesting al header*/
+    .header {
+      &__logo {
+        margin: 5px;
+        padding: 5px;
+        height: 80px;
+        width: 170px;
+      }
+      &__titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        flex-wrap: wrap;
+        color: blue;
+        font-size: 10px;
+        margin: 3px;
+      }
+    }
+  }
+
+/* CELULAR */
+/* se redefiniran las secciones para que se adapten a diseno responsivo en mobiles*/
+@media (min-width: 320px) and (max-width: 575px) {
+  body {
+    background-color: rgb(230, 223, 173);
+  }
+  .main__information {
+    font-size: 12px;
+  }
+  /* aplicando neesting al header*/
+  .header {
+    &__logo {
+      display: flex;
+      align-items: flex-end;
+      margin: 5px;
+      padding: 5px;
+      height: 80px;
+      width: 170px;
+    }
+    &__titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: stretch;
+      color: blue;
+      font-size: 10px;
+      margin: 3px;
+    }
+  }
+
+  ul.main__players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+  }
+}
+
+
+
+
+
