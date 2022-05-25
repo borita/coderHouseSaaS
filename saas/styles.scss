@@ -57,6 +57,13 @@ a {
   }
 }
 
+.main__transiciones
+{
+  &:hover{
+  transition: all, 1s;
+  transform: scale(1.08);
+  }
+}
 /* adaptando las imagenes para el aprovechamiento general adecuado*/
 .img {
   max-width: 100%;
