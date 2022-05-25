@@ -29,12 +29,20 @@ body {
   }
 }
 /* definiendo comportamiento de listas de index.html y events.html*/
-
+/*
 .header__transiciones :hover, li:hover {
   color: $color-transiciones;
   transition: all, 1s;
   transform: scale(1.01);
 }
+*/
+.header__transiciones,li {
+  &:hover{
+        color: $color-transiciones;
+        transition: all, 1s;
+        transform: scale(1.01);
+    };
+  }
 
 /* depurando el menu sin la linea */
 a {
@@ -76,6 +84,7 @@ ul.main__players {
 .footer__copyright {
   height: 300px;
   width: 300px;
+  color: $color-footer
 }
 
 /* TABLET */
@@ -100,7 +109,7 @@ ul.main__players {
         flex-direction: column;
         align-items: right;
         flex-wrap: wrap;
-        color: blue;
+        color:$color-titulo;
         font-size: 10px;
         margin: 3px;
       }
@@ -132,7 +141,7 @@ ul.main__players {
       align-items: center;
       flex-wrap: wrap;
       align-content: stretch;
-      color: blue;
+      color:$color-titulo;
       font-size: 10px;
       margin: 3px;
     }

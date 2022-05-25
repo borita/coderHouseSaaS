@@ -25,7 +25,14 @@ body {
   color: blue; }
 
 /* definiendo comportamiento de listas de index.html y events.html*/
+/*
 .header__transiciones :hover, li:hover {
+  color: $color-transiciones;
+  transition: all, 1s;
+  transform: scale(1.01);
+}
+*/
+.header__transiciones:hover, li:hover {
   color: blue;
   transition: all, 1s;
   transform: scale(1.01); }
@@ -64,7 +71,8 @@ ul.main__players {
 
 .footer__copyright {
   height: 300px;
-  width: 300px; }
+  width: 300px;
+  color: blue; }
 
 /* TABLET */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en tablet*/
