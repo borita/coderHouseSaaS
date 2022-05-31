@@ -1,41 +1,67 @@
+ul.main__players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.header__transiciones {
+  color: blue; }
+  .header__transiciones:hover {
+    transition: all, 1s;
+    transform: scale(1.05); }
+
+li {
+  color: blue; }
+  li:hover {
+    transition: all, 1s;
+    transform: scale(1.05); }
+
+.main__transiciones {
+  color: blue; }
+  .main__transiciones:hover {
+    transition: all, 1s;
+    transform: scale(1.08); }
+
+.footer__copyright {
+  display: flex;
+  padding: 5px;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  margin: 5px; }
+
+.adaptar-titulo-columna, .header__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: blue; }
+
 /* reseteo inicial */
 * {
   margin: 0px;
   padding: 0px; }
+
+header {
+  background-color: white; }
 
 /* definiendo estructura inicial desde el body con direccion de columna */
 body {
   display: flex;
   flex-direction: column;
   background-color: #e3ebd5;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin: 5px; }
 
 /* aplicando neesting al header*/
 .header__logo {
-  margin-right: 10px;
-  margin-left: 10px;
   height: 95px;
   width: 200px;
-  margin: 8px; }
+  margin: 10px; }
 
 .header__titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: blue; }
+  font-size: 10px; }
 
-/* definiendo comportamiento de listas de index.html y events.html*/
-/*
-.header__transiciones :hover, li:hover {
-  color: $color-transiciones;
-  transition: all, 1s;
-  transform: scale(1.01);
-}
-*/
-.header__transiciones:hover, li:hover {
-  color: blue;
-  transition: all, 1s;
-  transform: scale(1.01); }
+.nav-link {
+  color: #0a0af1 !important; }
 
 /* depurando el menu sin la linea */
 a {
@@ -48,10 +74,6 @@ a {
   .main__information ul li {
     list-style: none; }
 
-.main__transiciones:hover {
-  transition: all, 1s;
-  transform: scale(1.08); }
-
 /* adaptando las imagenes para el aprovechamiento general adecuado*/
 .img {
   max-width: 100%;
@@ -59,9 +81,6 @@ a {
 
 /* aplicando nesting a clases de players*/
 ul.main__players {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 10px;
   /* neesting */ }
   ul.main__players li {
@@ -73,18 +92,13 @@ ul.main__players {
       width: 175px;
       height: 220px; }
 
-.footer__copyright {
-  height: 300px;
-  width: 300px;
-  color: blue; }
-
 /* TABLET */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en tablet*/
 @media (min-width: 576px) and (max-width: 768px) {
   body {
     background-color: lightblue; }
   .main__information {
-    font-size: 12px; }
+    font-size: 15px; }
   /* aplicando neesting al header*/
   .header__logo {
     margin: 5px;
@@ -92,11 +106,7 @@ ul.main__players {
     height: 80px;
     width: 170px; }
   .header__titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
     flex-wrap: wrap;
-    color: blue;
     font-size: 10px;
     margin: 3px; } }
 
@@ -106,7 +116,7 @@ ul.main__players {
   body {
     background-color: #e6dfad; }
   .main__information {
-    font-size: 12px; }
+    font-size: 15px; }
   /* aplicando neesting al header*/
   .header__logo {
     display: flex;
@@ -116,16 +126,11 @@ ul.main__players {
     height: 80px;
     width: 170px; }
   .header__titulo {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     align-content: stretch;
-    color: blue;
+    /*color:$color-titulo;*/
     font-size: 10px;
     margin: 3px; }
   ul.main__players {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 15px; } }

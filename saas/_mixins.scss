@@ -1,0 +1,36 @@
+@mixin flex-box-players{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ul.main__players{
+    @include flex-box-players;
+}
+$clases: (".header__transiciones": 1.05, "li":  1.05, ".main__transiciones":  1.08);
+@mixin transitions{
+    @each $clase, $value in $clases{
+        #{$clase}{
+            color: $color-transiciones;
+            &:hover{
+                transition: all, 1s;
+                transform: scale($value);
+            }
+        }
+    }
+}
+@include transitions;
+@mixin pie-de-pagina{
+    display:flex;
+    padding:5px;
+    color: $color-footer;
+    background-color: blue;
+    border-radius: 10px;
+    margin:5px;
+  }
+.footer__copyright {
+    @include  pie-de-pagina;
+}
+
+
+
+
