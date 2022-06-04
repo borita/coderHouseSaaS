@@ -6,7 +6,8 @@
 ul.main__players{
     @include flex-box-players;
 }
-$clases: (".header__transiciones": 1.05, "li":  1.05, ".main__transiciones":  1.08);
+
+$clases: (".header__transiciones": 1.05, "li":  1.05, ".main__transiciones":  1.08 ".nav-link":2);
 @mixin transitions{
     @each $clase, $value in $clases{
         #{$clase}{
@@ -25,12 +26,11 @@ $clases: (".header__transiciones": 1.05, "li":  1.05, ".main__transiciones":  1.
     color: $color-footer;
     background-color: blue;
     border-radius: 10px;
-    margin:5px;
     margin-top: auto;
   }
 .footer__copyright {
-    margin-top: 2rem;
     @include  pie-de-pagina;  
+   
 }
 
 
