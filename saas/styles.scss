@@ -7,6 +7,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 header {
   background-color: white;
 }
@@ -17,6 +18,8 @@ body {
   background-color: rgb(227, 235, 213);
   border-radius: 10px;
   margin:5px;
+  /* para ajustar footer*/
+  min-height: 100vh;
 }
 /* aplicando neesting al header*/
 .header {
@@ -27,9 +30,11 @@ body {
   }
   &__titulo {
     @extend .adaptar-titulo-columna;
+    padding-top: .5rem;
     font-size: 10px;
   }
 }
+
 .nav-link{
   color:rgb(10, 10, 241) ! important;
 }
@@ -66,8 +71,6 @@ ul.main__players {
     }
   }
 }
-
-
 /* TABLET */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en tablet*/
 @media (min-width: 576px) and (max-width: 768px) {
@@ -95,32 +98,34 @@ ul.main__players {
 
 /* CELULAR */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en mobiles*/
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 321px) and (max-width: 575px) {
   body {
     background-color: rgb(230, 223, 173);
   }
   .main__information {
     font-size: 15px;
   }
-  /* aplicando neesting al header*/
+
+  /* aplicando neesting al header */
   .header {
     &__logo {
       display: flex;
       align-items: flex-end;
       margin: 5px;
       padding: 5px;
-      height: 80px;
-      width: 170px;
+      height: 70px;
+      width: 160px;
     }
     &__titulo {
       align-items: center;
       flex-wrap: wrap;
       align-content: stretch;
-      /*color:$color-titulo;*/
       font-size: 10px;
       margin: 3px;
     }
   }
+
+  
 
   ul.main__players {
     padding: 15px;

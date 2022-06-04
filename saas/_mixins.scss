@@ -26,9 +26,11 @@ $clases: (".header__transiciones": 1.05, "li":  1.05, ".main__transiciones":  1.
     background-color: blue;
     border-radius: 10px;
     margin:5px;
+    margin-top: auto;
   }
 .footer__copyright {
-    @include  pie-de-pagina;
+    margin-top: 2rem;
+    @include  pie-de-pagina;  
 }
 
 

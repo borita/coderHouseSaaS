@@ -30,7 +30,7 @@
   <body>
     <header>
       <div class="container">
-        <div class="row">
+        <div class="row .d-flex justify-content-between">
           <div class="col-sm-5 col-md-5 col-lg-3">
             <a href="../index.html"
               ><img
@@ -38,12 +38,6 @@
                 src="../recursos/padron.png"
                 alt="logo"
             /></a>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-3">
-            <div class="header__titulo">
-              <h1>RICHARD SALINAS</h1>
-              <h2>Tennis Tournament</h2>
-            </div>
           </div>
           <div class="col-sm-3 col-md-3 col-lg-6">
             <nav
@@ -53,7 +47,9 @@
                 class="navbar navbar-expand-lg header__transiciones navbar-light bg-rgb(227, 235, 213)"
               >
                 <div class="container-fluid">
+                  <!-- 
                   <a class="navbar-brand" href="#">Navbar</a>
+                  -->
                   <button
                     class="navbar-toggler"
                     type="button"
@@ -91,6 +87,10 @@
 
     <main>
       <section>
+        <div class="header__titulo">
+          <h1>RICHARD SALINAS</h1>
+          <h2>Tennis Tournament </h2>
+        </div>
         <div class="container">
           <form>
             <div class="row">
@@ -121,22 +121,10 @@
               />
             </div>
             <div class="form-group col-md-6">
-              <label for="city">City</label>
-              <input type="text" class="form-control" id="city" />
-            </div>
-            <div class="form-group col-md-6">
-              <label for="state">State</label>
-              <select class="form-control" name="state" id="state">
-                <option value="Texas">Texas</option>
-                <option value="California">California</option>
-                <option value="Florida">Florida</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6">
               <label for="sex">Sex</label>
               <select class="form-control" name="sex" id="sex">
-                <option value="Texas">Male</option>
-                <option value="California">Female</option>
+                <option value="Sex">Male</option>
+                <option value="sex">Female</option>
               </select>
             </div>
             <div class="row">
