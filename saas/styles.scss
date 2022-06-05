@@ -34,8 +34,11 @@ body {
     font-size: 10px;
   }
 }
+
 .nav-link{
   color:rgb(10, 10, 241) ! important;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 /* depurando el menu sin la linea */
 a {
@@ -112,8 +115,8 @@ ul.main__players {
       align-items: flex-end;
       margin: 5px;
       padding: 5px;
-      height: 70px;
-      width: 160px;
+      height: 80px;
+      width: 170px;
     }
     &__titulo {
       align-items: center;
@@ -123,9 +126,6 @@ ul.main__players {
       margin: 3px;
     }
   }
-
-  
-
   ul.main__players {
     padding: 15px;
   }

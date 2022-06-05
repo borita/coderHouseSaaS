@@ -6,8 +6,8 @@
 ul.main__players{
     @include flex-box-players;
 }
-
-$clases: (".header__transiciones": 1.05, "li":  1.05, ".main__transiciones":  1.08 ".nav-link":2);
+/* ae crean animaciones (transiciones y scalas*/
+$clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.08);
 @mixin transitions{
     @each $clase, $value in $clases{
         #{$clase}{
@@ -20,6 +20,7 @@ $clases: (".header__transiciones": 1.05, "li":  1.05, ".main__transiciones":  1.
     }
 }
 @include transitions;
+/* se crea estructura para el footer*/
 @mixin pie-de-pagina{
     display:flex;
     padding:5px;
