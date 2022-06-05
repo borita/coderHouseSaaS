@@ -47,7 +47,8 @@ a {
 /* aplicando neesting  a section main */
 .main__information {
   margin: 1px;
-  font-size: 18px;
+  font-size: 1.1rem;
+  font-weight: 500;
   ul li {
     list-style :$list-styles;
   }
