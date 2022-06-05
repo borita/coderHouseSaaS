@@ -30,9 +30,7 @@ $clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.08);
     margin-top: auto;
   }
 .footer__copyright {
-    @include pie-de-pagina;
-    margin-top: 1.1rem;  
-   
+    @include pie-de-pagina;  
 }
 
 

@@ -125,6 +125,9 @@ ul.main__players {
     background-color: #e6dfad; }
   .main__information {
     font-size: 15px; }
+  .draw__semifinals :not(:first-child) {
+    /* puede ser display:none;*/
+    visibility: hidden; }
   /* aplicando neesting al header */
   .header__logo {
     display: flex;

@@ -101,14 +101,20 @@ ul.main__players {
 
 /* CELULAR */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en mobiles*/
-@media (min-width: 321px) and (max-width: 575px) {
+@media  (min-width: 321px) and (max-width: 575px) {
   body {
     background-color: rgb(230, 223, 173);
   }
   .main__information {
     font-size: 15px;
   }
-
+  
+  .draw__semifinals{
+    :not(:first-child)  {
+     /* puede ser display:none;*/
+     visibility: hidden ;
+   }
+  }
   /* aplicando neesting al header */
   .header {
     &__logo {
@@ -131,6 +137,8 @@ ul.main__players {
     padding: 15px;
   }
 }
+
+
 
 
 
