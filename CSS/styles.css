@@ -3,7 +3,7 @@ ul.main__players {
   flex-wrap: wrap;
   justify-content: space-around; }
 
-/* ae crean animaciones (transiciones y scalas*/
+/* se crean animaciones (transiciones y scalas*/
 .nav-link {
   color: blue; }
   .nav-link:hover {
@@ -20,7 +20,7 @@ li {
   color: blue; }
   .main__transiciones:hover {
     transition: all, 1s;
-    transform: scale(1.08); }
+    transform: scale(1.04); }
 
 /* se crea estructura para el footer*/
 .footer__copyright {
@@ -28,7 +28,6 @@ li {
   padding: 5px;
   color: white;
   background-color: blue;
-  border-radius: 10px;
   margin-top: auto; }
 
 .adaptar-titulo-columna, .header__titulo {
@@ -63,7 +62,7 @@ body {
 
 .header__titulo {
   padding-top: .5rem;
-  font-size: 10px; }
+  font-size: .6rem; }
 
 .nav-link {
   color: #0a0af1 !important;
@@ -93,54 +92,36 @@ ul.main__players {
   /* neesting */ }
   ul.main__players li {
     list-style: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     /* neesting */ }
     ul.main__players li img.main_image {
       padding-bottom: 1rem;
       width: 175px;
       height: 220px; }
 
+.modal-body {
+  background-color: #e3ebd5; }
+
+.modal-title {
+  color: blue; }
+
 /* TABLET */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en tablet*/
 @media (min-width: 576px) and (max-width: 768px) {
-  body {
-    background-color: lightblue; }
-  .main__information {
-    font-size: 15px; }
   /* aplicando neesting al header*/
   .header__logo {
     margin: 5px;
     padding: 5px;
     height: 80px;
-    width: 170px; }
-  .header__titulo {
-    flex-wrap: wrap;
-    font-size: 10px;
-    margin: 3px; } }
+    width: 170px; } }
 
 /* CELULAR */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en mobiles*/
 @media (min-width: 321px) and (max-width: 575px) {
-  body {
-    background-color: #e6dfad; }
   .main__information {
-    font-size: 15px; }
+    font-size: 1.0rem; }
   .draw__semifinals :not(:first-child) {
     /* puede ser display:none;*/
     visibility: hidden; }
-  /* aplicando neesting al header */
-  .header__logo {
-    display: flex;
-    align-items: flex-end;
-    margin: 5px;
-    padding: 5px;
-    height: 80px;
-    width: 170px; }
-  .header__titulo {
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: stretch;
-    font-size: 10px;
-    margin: 3px; }
-  ul.main__players {
-    padding: 15px; } }
+  .modal-dialog {
+    visibility: hidden; } }

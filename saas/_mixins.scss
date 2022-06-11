@@ -6,8 +6,8 @@
 ul.main__players{
     @include flex-box-players;
 }
-/* ae crean animaciones (transiciones y scalas*/
-$clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.08);
+/* se crean animaciones (transiciones y scalas*/
+$clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.04);
 @mixin transitions{
     @each $clase, $value in $clases{
         #{$clase}{
@@ -26,7 +26,6 @@ $clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.08);
     padding:5px;
     color: $color-footer;
     background-color: blue;
-    border-radius: 10px;
     margin-top: auto;
   }
 .footer__copyright {

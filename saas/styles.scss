@@ -9,13 +9,13 @@
 }
 
 header {
-  background-color: white;
+  background-color: $color-header;
 }
 /* definiendo estructura inicial desde el body con direccion de columna */
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(227, 235, 213);
+  background-color: $color-background;
   border-radius: 10px;
   margin:5px;
   /* para ajustar footer*/
@@ -31,8 +31,9 @@ body {
   &__titulo {
     @extend .adaptar-titulo-columna;
     padding-top: .5rem;
-    font-size: 10px;
+    font-size: .6rem;
   }
+  
 }
 
 .nav-link{
@@ -42,7 +43,7 @@ body {
 }
 /* depurando el menu sin la linea */
 a {
-  text-decoration: none;
+  text-decoration:$text-decoration;
 }
 /* aplicando neesting  a section main */
 .main__information {
@@ -65,7 +66,7 @@ ul.main__players {
   /* neesting */
   li {
     list-style :$list-styles;
-    font-size: 20px;
+    font-size: 1.2rem;
     /* neesting */
     img.main_image {
       padding-bottom:  1rem;
@@ -74,15 +75,17 @@ ul.main__players {
     }
   }
 }
+.modal-body{
+  background-color: $color-background ;
+}
+.modal-title{
+  color :$color-titulo;
+} 
+
+
 /* TABLET */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en tablet*/
 @media (min-width: 576px) and (max-width: 768px) {
-  body {
-    background-color: lightblue;
-    }
-    .main__information {
-      font-size: 15px;
-    }
     /* aplicando neesting al header*/
     .header {
       &__logo {
@@ -91,50 +94,23 @@ ul.main__players {
         height: 80px;
         width: 170px;
       }
-      &__titulo {
-        flex-wrap: wrap;
-        font-size: 10px;
-        margin: 3px;
-      }
     }
   }
 
 /* CELULAR */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en mobiles*/
 @media  (min-width: 321px) and (max-width: 575px) {
-  body {
-    background-color: rgb(230, 223, 173);
-  }
   .main__information {
-    font-size: 15px;
+    font-size: 1.0rem;
   }
-  
   .draw__semifinals{
     :not(:first-child)  {
      /* puede ser display:none;*/
      visibility: hidden ;
    }
   }
-  /* aplicando neesting al header */
-  .header {
-    &__logo {
-      display: flex;
-      align-items: flex-end;
-      margin: 5px;
-      padding: 5px;
-      height: 80px;
-      width: 170px;
-    }
-    &__titulo {
-      align-items: center;
-      flex-wrap: wrap;
-      align-content: stretch;
-      font-size: 10px;
-      margin: 3px;
-    }
-  }
-  ul.main__players {
-    padding: 15px;
+  .modal-dialog{
+    visibility: hidden ;
   }
 }
 
