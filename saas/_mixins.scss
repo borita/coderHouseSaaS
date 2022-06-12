@@ -24,7 +24,7 @@ $clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.04);
 /* se crea estructura para el footer*/
 @mixin pie-de-pagina{
     display:flex;
-    padding:5px;
+    padding:10px;
     color: $color-footer;
     background-color: blue;
     margin-top: auto;

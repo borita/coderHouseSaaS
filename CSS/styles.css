@@ -27,7 +27,7 @@ li {
 /* se crea estructura para el footer*/
 .footer__copyright {
   display: flex;
-  padding: 5px;
+  padding: 10px;
   color: white;
   background-color: blue;
   margin-top: auto; }
@@ -52,8 +52,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #e3ebd5;
+  margin-left: 1px;
+  margin-right: 1px;
   border-radius: 10px;
-  margin: 5px;
   /* para ajustar footer*/
   min-height: 100vh; }
 
