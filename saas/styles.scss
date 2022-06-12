@@ -105,12 +105,11 @@ ul.main__players {
   }
   .draw__semifinals{
     :not(:first-child)  {
-     /* puede ser display:none;*/
-     visibility: hidden ;
+     visibility: $visibility ;
    }
   }
   .modal-dialog{
-    visibility: hidden ;
+    visibility: $visibility ;
   }
 }
 

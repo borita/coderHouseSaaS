@@ -121,7 +121,6 @@ ul.main__players {
   .main__information {
     font-size: 1.0rem; }
   .draw__semifinals :not(:first-child) {
-    /* puede ser display:none;*/
     visibility: hidden; }
   .modal-dialog {
     visibility: hidden; } }

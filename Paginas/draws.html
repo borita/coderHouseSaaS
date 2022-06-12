@@ -102,10 +102,7 @@
                   name="category"
                   id="freshman"
                 />
-                <label
-                  class="form-check-label"
-                  for="freshman"
-                >
+                <label class="form-check-label" for="freshman">
                   Freshman
                 </label>
               </div>
@@ -120,12 +117,7 @@
                   id="varsity"
                   checked
                 />
-                <label
-                  class="form-check-label"
-                  for="varsity"
-                >
-                  Varsity
-                </label>
+                <label class="form-check-label" for="varsity"> Varsity </label>
               </div>
               <div class="row">&nbsp;</div>
               <div class="container">
@@ -142,7 +134,17 @@
                       <div class="card-body">
                         <h5 class="card-title">Raul Ramirez 7-5 6-4</h5>
                         <p class="card-text">J.L. Clerck</p>
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal1"
+                        >
+                          Score
+                        </button>
                       </div>
+                      
                     </div>
                     <!-- otra fila -->
                     <!--agregue row -->
@@ -344,7 +346,7 @@
                       </div>
                     </div>
                     <!-- -->
-          
+
                     <div class="row">
                       <div class="col-6 col-md-4">&nbsp;</div>
                     </div>
@@ -363,8 +365,13 @@
                         <h5 class="card-title">Raul Ramirez 7-5 6-4</h5>
                         <p class="card-text">Guillermo Vilas</p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                           Score
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Score
                         </button>
                       </div>
                     </div>
@@ -389,67 +396,213 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div
+      class="modal-fullscreen modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enter Score</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex flex-column">
+            <div>
+              <label for="score1">Raul Ramirez:</label>
+              <input
+                type="number"
+                id="score1"
+                name="score1"
+                min="0"
+                max="7"
+                step="1"
+                value="0"
+              />
+              <label for="score2">Guillermo Vilas:</label>
+              <input
+                type="number"
+                id="score2"
+                name="score2"
+                min="0"
+                max="7"
+                step="1"
+                value="0"
+              />
+            </div>
+            <div>
+              <label for="score3">Raul Ramirez:</label>
+              <input
+                type="number"
+                id="score3"
+                name="score3"
+                min="0"
+                max="7"
+                step="1"
+                value="0"
+              />
+              <label for="score4">Guillermo Vilas:</label>
+              <input
+                type="number"
+                id="score4"
+                name="score4"
+                min="0"
+                max="7"
+                step="1"
+                value="0"
+              />
+            </div>
+            <div>
+              <label for="score5">Raul Ramirez:</label>
+              <input
+                type="number"
+                id="score5"
+                name="score5"
+                min="0"
+                max="7"
+                step="1"
+                value="0"
+              />
+              <label for="score6">Guillermo Vilas:</label>
+              <input
+                type="number"
+                id="score6"
+                name="score6"
+                min="0"
+                max="7"
+                step="1"
+                value="0"
+              />
+            </div>
+          </div>
 
-<!-- Modal -->
-<div class="modal-fullscreen modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Enter Score</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body d-flex flex-column">
-        <div>
-            <label for="quantity">Raul Ramirez:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-            <label for="quantity">Guillermo Vilas:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-       </div> 
-       <div>
-            <label for="quantity">Raul Ramirez:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-            <label for="quantity">Guillermo Vilas:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-      </div>
-      <div>
-            <label for="quantity">Raul Ramirez:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-            <label for="quantity">Guillermo Vilas:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
-      <!--
-      <div class="modal-body">
-          <div></div> 
-          <label for="quantity">Raul Ramirez:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-          <label for="quantity">Guillermo Vilas:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-          <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <label for="quantity">Raul Ramirez:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-          <label for="quantity">Guillermo Vilas:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-          <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <label for="quantity">Raul Ramirez:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
-          <label for="quantity">Guillermo Vilas:</label>
-          <input type="number" id="quantity" name="quantity" min="0" max="7" step="1" value="0">
+<!-- Modal 1-->
+<div
+class="modal-fullscreen modal fade"
+id="exampleModal1"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Enter Score</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body d-flex flex-column">
+      <div>
+        <label for="score7">Raul Ramirez:</label>
+        <input
+          type="number"
+          id="score7"
+          name="score7"
+          min="0"
+          max="7"
+          step="1"
+          value="0"
+        />
+        <label for="score8">Jose L. Clerc:</label>
+        <input
+          type="number"
+          id="score8"
+          name="score8"
+          min="0"
+          max="7"
+          step="1"
+          value="0"
+        />
       </div>
-      -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div>
+        <label for="score9">Raul Ramirez:</label>
+        <input
+          type="number"
+          id="score9"
+          name="score9"
+          min="0"
+          max="7"
+          step="1"
+          value="0"
+        />
+        <label for="score10">Jose L. Clerc:</label>
+        <input
+          type="number"
+          id="score10"
+          name="score10"
+          min="0"
+          max="7"
+          step="1"
+          value="0"
+        />
       </div>
+      <div>
+        <label for="score11">Raul Ramirez:</label>
+        <input
+          type="number"
+          id="score11"
+          name="score11"
+          min="0"
+          max="7"
+          step="1"
+          value="0"
+        />
+        <label for="score12">Jose L. Clerc:</label>
+        <input
+          type="number"
+          id="score12"
+          name="score12"
+          min="0"
+          max="7"
+          step="1"
+          value="0"
+        />
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-dismiss="modal"
+      >
+        Close
+      </button>
+      <button type="button" class="btn btn-primary">Save changes</button>
     </div>
   </div>
 </div>
-
-    <!-- SCRIPT  BOOSTRAP-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+</div>
+ <!-- SCRIPT  BOOSTRAP-->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+ ></script>
+</body>
 </html>
