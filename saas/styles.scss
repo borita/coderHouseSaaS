@@ -75,6 +75,7 @@ ul.main__players {
     }
   }
 }
+/* definicion de estilos en ventana modal */
 .modal-body{
   background-color: $color-background ;
 }
@@ -103,11 +104,14 @@ ul.main__players {
   .main__information {
     font-size: 1.0rem;
   }
+  /* se oculta informacion en mobile (se podra ver en modo horizontal por los rangos de media querys */
+  /* se eliminan todos los elementos despues del primer nodo*/
   .draw__semifinals{
     :not(:first-child)  {
      visibility: $visibility ;
    }
   }
+  /* se oculta ventana modal (disponible en forma horizontal */
   .modal-dialog{
     visibility: $visibility ;
   }

@@ -27,9 +27,10 @@
     </title>
   </head>
   <body>
+    <!-- definicicion de header con Logo y menu responsive con Boostrap-->
     <header>
       <div class="container fluid">
-        <!-- ajustando menu a la derecha y logo a izq-->
+        <!-- ajustando menu a la derecha y logo a izq con Boostrap - flexbox-->
         <div class="row .d-flex justify-content-between">
           <div class="col-sm-5 col-md-5 col-lg-2">
             <a href="../index.html"
@@ -47,9 +48,6 @@
                 class="navbar navbar-expand-lg navbar-light bg-rgb(227, 235, 213)"
               >
                 <div class="container-fluid">
-                  <!-- 
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  -->
                   <button
                     class="navbar-toggler"
                     type="button"
@@ -134,15 +132,6 @@
                       <div class="card-body">
                         <h5 class="card-title">Raul Ramirez 7-5 6-4</h5>
                         <p class="card-text">J.L. Clerck</p>
-                        <!-- Button trigger modal -->
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal1"
-                        >
-                          Score
-                        </button>
                       </div>
                       
                     </div>
@@ -497,107 +486,7 @@
         </div>
       </div>
     </div>
-<!-- Modal 1-->
-<div
-class="modal-fullscreen modal fade"
-id="exampleModal1"
-tabindex="-1"
-aria-labelledby="exampleModalLabel"
-aria-hidden="true"
->
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Enter Score</h5>
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      ></button>
-    </div>
-    <div class="modal-body d-flex flex-column">
-      <div>
-        <label for="score7">Raul Ramirez:</label>
-        <input
-          type="number"
-          id="score7"
-          name="score7"
-          min="0"
-          max="7"
-          step="1"
-          value="0"
-        />
-        <label for="score8">Jose L. Clerc:</label>
-        <input
-          type="number"
-          id="score8"
-          name="score8"
-          min="0"
-          max="7"
-          step="1"
-          value="0"
-        />
-      </div>
-      <div>
-        <label for="score9">Raul Ramirez:</label>
-        <input
-          type="number"
-          id="score9"
-          name="score9"
-          min="0"
-          max="7"
-          step="1"
-          value="0"
-        />
-        <label for="score10">Jose L. Clerc:</label>
-        <input
-          type="number"
-          id="score10"
-          name="score10"
-          min="0"
-          max="7"
-          step="1"
-          value="0"
-        />
-      </div>
-      <div>
-        <label for="score11">Raul Ramirez:</label>
-        <input
-          type="number"
-          id="score11"
-          name="score11"
-          min="0"
-          max="7"
-          step="1"
-          value="0"
-        />
-        <label for="score12">Jose L. Clerc:</label>
-        <input
-          type="number"
-          id="score12"
-          name="score12"
-          min="0"
-          max="7"
-          step="1"
-          value="0"
-        />
-      </div>
-    </div>
 
-    <div class="modal-footer">
-      <button
-        type="button"
-        class="btn btn-secondary"
-        data-bs-dismiss="modal"
-      >
-        Close
-      </button>
-      <button type="button" class="btn btn-primary">Save changes</button>
-    </div>
-  </div>
-</div>
-</div>
  <!-- SCRIPT  BOOSTRAP-->
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
