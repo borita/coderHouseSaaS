@@ -1,11 +1,10 @@
 /* definicion de mixin para reutilizacion */
-@mixin flex-box-players{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-ul.main__players{
-    @include flex-box-players;
+
+/* se utilizara para redimensionar logo con parametros como si fuera una funcion */
+@mixin logo-dimensions($height,$width,$margin) {
+    height: $height;
+    width:  $width;
+    margin: $margin;
 }
 /* se crean animaciones (transiciones y scalas*/
 $clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.04);
@@ -21,6 +20,16 @@ $clases: (".nav-link": 1.08, "li":  1.05, ".main__transiciones":  1.04);
     }
 }
 @include transitions;
+
+/* mixin para definir comportamiento flexbox */ 
+@mixin flex-box-players{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ul.main__players{
+    @include flex-box-players;
+}
 /* se crea estructura para el footer*/
 @mixin pie-de-pagina{
     display:flex;

@@ -27,9 +27,7 @@ body {
 /* aplicando neesting al header*/
 .header {
   &__logo {
-    height: 95px;
-    width: 200px;
-    margin: 10px;
+    @include logo-dimensions(95px,200px,10px);
   }
   &__titulo {
     @extend .adaptar-titulo-columna;
@@ -65,7 +63,7 @@ a {
 }
 /* aplicando nesting a clases de players*/
 ul.main__players {
-  padding: 10px;
+  padding: 1rem;
   /* neesting */
   li {
     list-style :$list-styles;
@@ -93,10 +91,8 @@ ul.main__players {
     /* aplicando neesting al header*/
     .header {
       &__logo {
-        margin: 5px;
+        @include logo-dimensions(80px,170px,5px);
         padding: 5px;
-        height: 80px;
-        width: 170px;
       }
     }
   }

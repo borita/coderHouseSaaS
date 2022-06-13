@@ -1,10 +1,6 @@
 /* definicion de variables mas usadas para su reutilizacion */
 /* definicion de mixin para reutilizacion */
-ul.main__players {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
+/* se utilizara para redimensionar logo con parametros como si fuera una funcion */
 /* se crean animaciones (transiciones y scalas*/
 .nav-link {
   color: blue; }
@@ -23,6 +19,12 @@ li {
   .main__transiciones:hover {
     transition: all, 1s;
     transform: scale(1.04); }
+
+/* mixin para definir comportamiento flexbox */
+ul.main__players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 /* se crea estructura para el footer*/
 .footer__copyright {
@@ -92,7 +94,7 @@ a {
 
 /* aplicando nesting a clases de players*/
 ul.main__players {
-  padding: 10px;
+  padding: 1rem;
   /* neesting */ }
   ul.main__players li {
     list-style: none;
@@ -115,10 +117,10 @@ ul.main__players {
 @media (min-width: 576px) and (max-width: 768px) {
   /* aplicando neesting al header*/
   .header__logo {
-    margin: 5px;
-    padding: 5px;
     height: 80px;
-    width: 170px; } }
+    width: 170px;
+    margin: 5px;
+    padding: 5px; } }
 
 /* CELULAR */
 /* se redefiniran las secciones para que se adapten a diseno responsivo en mobiles*/
