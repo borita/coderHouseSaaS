@@ -131,6 +131,6 @@ ul.main__players {
   /* se eliminan todos los elementos despues del primer nodo*/
   .draw__semifinals :not(:first-child) {
     visibility: hidden; }
-  /* se oculta ventana modal (disponible en forma horizontal */
+  /* se oculta ventana modal (disponible en forma horizontal en mobile */
   .modal-dialog {
     visibility: hidden; } }
